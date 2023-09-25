@@ -1,0 +1,148 @@
+<title>Chat</title>
+<body>
+  <div class="chat-window">
+    <header class="header">
+      <h1>Atendimento Online</h1>
+
+    </header>
+   
+    <div class="chat">
+      <div class="chat-bubble received">
+        <div class="bubble-text">Bla bla bla</div>
+        <div class="bubble-author">Atendente diz:</div>
+      </div>
+
+      <div class="chat-bubble received">
+        <div class="bubble-text">Bla bla bla blaaa</div>
+        <div class="bubble-author">Atendente diz:</div>
+      </div>
+
+      <div class="chat-bubble sent">
+        <div class="bubble-text">blaba bla bla </div>
+        <div class="bubble-author">Você diz:</div>
+      </div>
+
+      <div class="chat-bubble sent">
+        <div class="bubble-text">bla bla bla</div>
+        <div class="bubble-author">Você diz:</div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="input-container">
+        <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+        <button id="send-button">Enviar</button>
+      </div>
+    </footer>
+  </div>
+  </body>
+
+
+<style> 
+
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.chat-window {
+  max-width: 700px;
+  margin: 20px auto;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+
+.reference{
+  font-size: 5px;
+  margin-top:1px;
+  margin-bottom: 2px;
+}
+
+.chat {
+  margin-top: 10px;
+  padding-top: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.chat-bubble {
+  margin: 17px;
+  padding:5px;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  max-width: 65%;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  background-color: #fff;
+}
+
+.received {
+  border-color: black;
+  background: #90EE90;
+  margin-rigth: auto;
+}
+
+.sent {
+  border-color: black;
+  color: #000;
+  margin-left: auto;
+  color: #333;
+}
+
+.bubble-author {
+  font-size: 12px;
+  color: #808080;
+  margin-top: 4px;
+  position: absolute;
+  top: -20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#message-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+}
+
+#send-button {
+  padding: 10px 20px;
+  background-color: #90EE90;
+  border: 1px solid black;
+  margin-left: 5px;
+  border-radius: 5px;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#send-button:hover {
+  background-color: #0056b3;
+}
+</style>
